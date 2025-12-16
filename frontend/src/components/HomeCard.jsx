@@ -12,7 +12,6 @@ const HomeCard = ({post}) => {
     dispatch(getPost(post._id))
     dispatch(fetchPosts())
   }, [dispatch])
-
   const handleDelete = () => {
     confirmAlert({
       title: "Confirm to delete",
@@ -31,7 +30,7 @@ const HomeCard = ({post}) => {
   }
   return (
   
-           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 mb-4 overflow-hidden">
+           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 mb-4 overflow-hidden tralanslate-y-0 hover:-translate-y-1">
       <div className="flex justify-between items-start">
         <h3 className="text-xl font-semibold text-gray-800">{post.title}</h3>
         <button 
